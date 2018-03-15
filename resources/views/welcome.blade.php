@@ -62,6 +62,9 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            .is-active{
+                background-color: red;
+            }
         </style>
     </head>
     <body>
@@ -83,7 +86,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
+                    <a href="https://laravel.com/docs" class="{{Nav::isRoute('home', 'is-active')}}">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://forge.laravel.com">Forge</a>
